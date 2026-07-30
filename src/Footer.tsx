@@ -25,10 +25,14 @@ const Footer = () => {
                             Links
                         </h4>
                         <ul className="flex flex-col gap-3 list-none p-0 m-0">
-                            {['Features', 'Solutions', 'Benefits', 'FAQ'].map((item) => (
-                                <li key={item}>
-                                    <a href="#" className="text-neutral-400 text-[13px] no-underline hover:text-neutral-100 transition-colors duration-200">
-                                        {item}
+                            {[
+                                { name: 'Features', href: '#features' },
+                                { name: 'Solutions', href: '#solutions' },
+                                { name: 'FAQ', href: '#faq' },
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <a href={item.href} className="text-[#7a7a7a] text-[13px] no-underline hover:text-[#c8d8f0] transition-colors duration-200">
+                                        {item.name}
                                     </a>
                                 </li>
                             ))}
@@ -41,10 +45,12 @@ const Footer = () => {
                             Resources
                         </h4>
                         <ul className="flex flex-col gap-3 list-none p-0 m-0">
-                            {['Contact', 'Download Geko', 'About Us'].map((item) => (
-                                <li key={item}>
-                                    <a href="#" className="text-neutral-400 text-[13px] no-underline hover:text-neutral-100 transition-colors duration-200">
-                                        {item}
+                            {[
+                                { name: 'Contact', href: 'mailto:example@gmail.com' },
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <a href={item.href} className="text-[#7a7a7a] text-[13px] no-underline hover:text-[#c8d8f0] transition-colors duration-200">
+                                        {item.name}
                                     </a>
                                 </li>
                             ))}
@@ -57,10 +63,20 @@ const Footer = () => {
                             Socials
                         </h4>
                         <ul className="flex flex-col gap-3 list-none p-0 m-0">
-                            {['Instagram', 'Twitter (X)', 'TikTok', 'Facebook'].map((item) => (
-                                <li key={item}>
-                                    <a href="#" className="text-neutral-400 text-[13px] no-underline hover:text-neutral-100 transition-colors duration-200">
-                                        {item}
+                            {[
+                                { name: 'Instagram', href: 'https://instagram.com/nekoprotocol' },
+                                { name: 'Twitter (X)', href: 'https://x.com/nekoprotocol' },
+                                { name: 'TikTok', href: 'https://tiktok.com/@nekoprotocol' },
+                                { name: 'Facebook', href: 'https://facebook.com/nekoprotocol' },
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <a
+                                        href={item.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-[#7a7a7a] text-[13px] no-underline hover:text-[#c8d8f0] transition-colors duration-200"
+                                    >
+                                        {item.name}
                                     </a>
                                 </li>
                             ))}
@@ -81,7 +97,9 @@ const Footer = () => {
                 <div className="flex gap-2.5">
                     {/* Instagram */}
                     <a
-                        href="#"
+                        href="https://instagram.com/nekoprotocol"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="Instagram"
                         className="w-9 h-9 rounded-full bg-neutral-850 border border-neutral-750 flex items-center justify-center text-neutral-200 no-underline transition-all duration-200 hover:bg-neutral-600 hover:border-neutral-450 hover:text-neutral-100"
                     >
@@ -94,7 +112,9 @@ const Footer = () => {
 
                     {/* Facebook */}
                     <a
-                        href="#"
+                        href="https://facebook.com/nekoprotocol"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="Facebook"
                         className="w-9 h-9 rounded-full bg-neutral-850 border border-neutral-750 flex items-center justify-center text-neutral-200 no-underline transition-all duration-200 hover:bg-neutral-600 hover:border-neutral-450 hover:text-neutral-100"
                     >
@@ -105,7 +125,9 @@ const Footer = () => {
 
                     {/* LinkedIn */}
                     <a
-                        href="#"
+                        href="https://linkedin.com/company/nekoprotocol"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="LinkedIn"
                         className="w-9 h-9 rounded-full bg-neutral-850 border border-neutral-750 flex items-center justify-center text-neutral-200 no-underline transition-all duration-200 hover:bg-neutral-600 hover:border-neutral-450 hover:text-neutral-100"
                     >
@@ -118,7 +140,9 @@ const Footer = () => {
 
                     {/* X / Twitter */}
                     <a
-                        href="#"
+                        href="https://x.com/nekoprotocol"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         aria-label="Twitter / X"
                         className="w-9 h-9 rounded-full bg-neutral-850 border border-neutral-750 flex items-center justify-center text-neutral-200 no-underline transition-all duration-200 hover:bg-neutral-600 hover:border-neutral-450 hover:text-neutral-100"
                     >
