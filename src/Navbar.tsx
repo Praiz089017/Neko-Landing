@@ -68,7 +68,9 @@ const Navbar: React.FC = () => {
             {/* Right: Navigation Links & Launch Button */}
             <div className="flex items-center gap-3 md:gap-4">
               <a
-                href="#"
+                href="https://dapp.nekoprotocol.xyz/assets"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hidden lg:inline text-white hover:text-[#FFF9F0] text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#334EAC] rounded-lg px-3 py-2"
               >
                 Explore Assets
