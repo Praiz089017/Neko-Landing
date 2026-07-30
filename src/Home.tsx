@@ -138,9 +138,13 @@ const Home: React.FC = () => {
       </section>
 
       {/* RWA Features Section */}
-      <RwaFeatures />
+      <section id="features">
+        <RwaFeatures />
+      </section>
       {/* Problem Statement Section */}
-      <ProblemStatement />
+      <section id="solutions">
+        <ProblemStatement />
+      </section>
 
       {/* HeroScrollDemo Section */}
       <section className="relative w-full overflow-hidden">
@@ -148,7 +152,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="relative w-full mb-16 lg:mb-24">
+      <section id="faq" className="relative w-full mb-16 lg:mb-24">
         <FAQ />
       </section>
 
