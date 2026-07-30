@@ -125,7 +125,7 @@ const FullscreenMenuOverlay: React.FC<FullscreenMenuOverlayProps> = ({
           aria-label="Navigation Menu"
         >
           {/* Gradient Background */}
-          <div className="fixed inset-0 bg-gradient-to-b from-[#081F5C] via-[#334EAC]/80 to-[#081F5C] pointer-events-none" />
+          <div className="fixed inset-0 bg-gradient-to-b from-brand-navy via-brand-blue/80 to-brand-navy pointer-events-none" />
 
           {/* Content */}
           <motion.div
@@ -142,7 +142,7 @@ const FullscreenMenuOverlay: React.FC<FullscreenMenuOverlayProps> = ({
                 <button
                   ref={firstFocusableRef}
                   onClick={onClose}
-                  className="flex items-center gap-2 text-white hover:text-[#FFF9F0] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#334EAC] rounded-lg px-3 py-2"
+                  className="flex items-center gap-2 text-white hover:text-brand-cream transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue rounded-lg px-3 py-2"
                   aria-label="Close menu"
                 >
                   <X className="w-5 h-5" />
@@ -155,7 +155,7 @@ const FullscreenMenuOverlay: React.FC<FullscreenMenuOverlayProps> = ({
                 <a
                   href="/"
                   onClick={onClose}
-                  className="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#334EAC] rounded-lg px-3 py-2"
+                  className="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue rounded-lg px-3 py-2"
                 >
                   <img src={Neko} alt="Neko Logo" className="h-8 w-auto" />
                 </a>
@@ -166,13 +166,13 @@ const FullscreenMenuOverlay: React.FC<FullscreenMenuOverlayProps> = ({
                     Discover
                   </button>
                   <select className="px-3 py-2 bg-white/10 text-white border border-white/30 rounded-lg text-xs md:text-sm font-medium hover:bg-white/20 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white appearance-none cursor-pointer">
-                    <option value="en" className="text-[#081F5C]">
+                    <option value="en" className="text-brand-navy">
                       English
                     </option>
-                    <option value="es" className="text-[#081F5C]">
+                    <option value="es" className="text-brand-navy">
                       Spanish
                     </option>
-                    <option value="fr" className="text-[#081F5C]">
+                    <option value="fr" className="text-brand-navy">
                       French
                     </option>
                   </select>
@@ -202,7 +202,7 @@ const FullscreenMenuOverlay: React.FC<FullscreenMenuOverlayProps> = ({
                               key={item.name}
                               href={item.href}
                               onClick={onClose}
-                              className="block text-lg md:text-xl font-medium text-white hover:text-[#FFF9F0] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#334EAC] rounded-lg px-3 py-2"
+                              className="block text-lg md:text-xl font-medium text-white hover:text-brand-cream transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue rounded-lg px-3 py-2"
                             >
                               {item.name}
                             </a>
@@ -219,7 +219,7 @@ const FullscreenMenuOverlay: React.FC<FullscreenMenuOverlayProps> = ({
                     transition={{ duration: 0.3, delay: 0.5 }}
                     className="hidden lg:flex items-center justify-center"
                   >
-                    <div className="relative w-48 h-64 rounded-3xl bg-gradient-to-br from-[#FF9F3C] to-[#FF7A3C] flex items-center justify-center shadow-2xl">
+                    <div className="relative w-48 h-64 rounded-3xl bg-gradient-to-br from-brand-orange to-brand-orange-dark flex items-center justify-center shadow-2xl">
                       <img
                         src={Neko}
                         alt="Neko Logo"
@@ -249,7 +249,7 @@ const FullscreenMenuOverlay: React.FC<FullscreenMenuOverlayProps> = ({
                           social.label === "Discord" ? lastFocusableRef : null
                         }
                         href={social.href}
-                        className="text-white hover:text-[#FF9F3C] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#334EAC] rounded-lg p-2"
+                        className="text-white hover:text-brand-orange transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue rounded-lg p-2"
                         aria-label={social.label}
                       >
                         <Icon className="w-6 h-6" />

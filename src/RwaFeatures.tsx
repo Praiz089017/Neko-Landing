@@ -44,7 +44,7 @@ export const RwaFeatures: React.FC = () => {
           {features.map((feature, idx) => (
             <div 
               key={idx}
-              className="bg-[#0a0a0a] rounded-[40px] p-10 lg:p-14 border border-white/10 relative overflow-hidden flex flex-col group hover:border-blue-500/40 transition-all duration-700 hover:shadow-[0_0_50px_rgba(59,130,246,0.1)]"
+              className="bg-neutral-950 rounded-[40px] p-10 lg:p-14 border border-white/10 relative overflow-hidden flex flex-col group hover:border-blue-500/40 transition-all duration-700 hover:shadow-[0_0_50px_rgba(59,130,246,0.1)]"
             >
               {/* Subtle Gradient Accent */}
               <div className="absolute -top-20 -right-20 w-80 h-80 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none group-hover:bg-blue-500/20 transition-all duration-700"></div>
@@ -56,7 +56,7 @@ export const RwaFeatures: React.FC = () => {
               </div>
 
               {/* Image Container - Stylized Mockup */}
-              <div className="relative z-10 w-full mt-auto bg-[#141414] rounded-3xl border border-white/5 overflow-hidden flex items-center justify-center pt-8 px-8 transform group-hover:scale-[1.02] transition-transform duration-700 shadow-2xl">
+              <div className="relative z-10 w-full mt-auto bg-neutral-900 rounded-3xl border border-white/5 overflow-hidden flex items-center justify-center pt-8 px-8 transform group-hover:scale-[1.02] transition-transform duration-700 shadow-2xl">
                 <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
                 <img 
                   src={feature.image} 

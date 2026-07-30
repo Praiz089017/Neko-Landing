@@ -36,35 +36,35 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0 pointer-events-none">
         {/* Top Left: PayPal-style */}
         <div className="absolute left-[10%] top-[20%] animate-float">
-          <div className="w-24 h-24 bg-[#3B82F6] rounded-[35%] flex items-center justify-center shadow-[0_20px_50px_rgba(59,130,246,0.5),inset_0_-4px_8px_rgba(0,0,0,0.3)] -rotate-12 border border-white/20 backdrop-blur-sm transition-transform hover:scale-110">
+          <div className="w-24 h-24 bg-blue-500 rounded-[35%] flex items-center justify-center shadow-[0_20px_50px_rgba(59,130,246,0.5),inset_0_-4px_8px_rgba(0,0,0,0.3)] -rotate-12 border border-white/20 backdrop-blur-sm transition-transform hover:scale-110">
              <span className="text-white font-bold text-4xl italic">P</span>
           </div>
         </div>
 
         {/* Bottom Left: USDC-style */}
         <div className="absolute left-[12%] bottom-[22%] animate-float-delayed">
-          <div className="w-22 h-22 bg-[#2775CA] rounded-[35%] flex items-center justify-center shadow-[0_20px_45px_rgba(39,117,202,0.4),inset_0_-4px_6px_rgba(0,0,0,0.3)] rotate-12 border border-white/20 backdrop-blur-sm transition-transform hover:scale-110">
+          <div className="w-22 h-22 bg-icon-coinbase rounded-[35%] flex items-center justify-center shadow-[0_20px_45px_rgba(39,117,202,0.4),inset_0_-4px_6px_rgba(0,0,0,0.3)] rotate-12 border border-white/20 backdrop-blur-sm transition-transform hover:scale-110">
              <CircleDollarSign className="text-white w-12 h-12" />
           </div>
         </div>
 
         {/* Bottom Center: Yellow 'e'-style */}
         <div className="absolute left-1/2 -translate-x-1/2 bottom-[8%] animate-float">
-          <div className="w-24 h-24 bg-[#FACC15] rounded-[35%] flex items-center justify-center shadow-[0_20px_50px_rgba(250,204,21,0.4),inset_0_-4px_8px_rgba(0,0,0,0.3)] rotate-6 border border-white/20 backdrop-blur-sm transition-transform hover:scale-110">
+          <div className="w-24 h-24 bg-yellow-400 rounded-[35%] flex items-center justify-center shadow-[0_20px_50px_rgba(250,204,21,0.4),inset_0_-4px_8px_rgba(0,0,0,0.3)] rotate-6 border border-white/20 backdrop-blur-sm transition-transform hover:scale-110">
              <span className="text-black font-black text-5xl">e</span>
           </div>
         </div>
 
         {/* Top Right: Stellar-style */}
         <div className="absolute right-[10%] top-[15%] animate-float-delayed">
-          <div className="w-24 h-24 bg-[#1a1a1a] rounded-[35%] flex items-center justify-center shadow-[0_20px_50px_rgba(0,0,0,0.5),inset_0_4px_8px_rgba(255,255,255,0.1)] rotate-12 border border-white/10 backdrop-blur-sm transition-transform hover:scale-110">
+          <div className="w-24 h-24 bg-neutral-850 rounded-[35%] flex items-center justify-center shadow-[0_20px_50px_rgba(0,0,0,0.5),inset_0_4px_8px_rgba(255,255,255,0.1)] rotate-12 border border-white/10 backdrop-blur-sm transition-transform hover:scale-110">
              <Zap className="text-white w-12 h-12" />
           </div>
         </div>
 
         {/* Bottom Right: Dark Blue Logo-style */}
         <div className="absolute right-[8%] bottom-[20%] animate-float">
-          <div className="w-22 h-22 bg-[#1E3A8A] rounded-[35%] flex items-center justify-center shadow-[0_20px_45px_rgba(30,58,138,0.4),inset_0_-4px_6px_rgba(0,0,0,0.3)] -rotate-6 border border-white/20 backdrop-blur-sm transition-transform hover:scale-110">
+          <div className="w-22 h-22 bg-blue-900 rounded-[35%] flex items-center justify-center shadow-[0_20px_45px_rgba(30,58,138,0.4),inset_0_-4px_6px_rgba(0,0,0,0.3)] -rotate-6 border border-white/20 backdrop-blur-sm transition-transform hover:scale-110">
              <Wallet className="text-white w-11 h-11" />
           </div>
         </div>

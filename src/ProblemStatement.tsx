@@ -7,7 +7,7 @@ interface ProblemCardProps {
 }
 
 const ProblemCard: React.FC<ProblemCardProps> = ({ title, text, imagePath }) => (
-  <div className="group relative bg-[#0a0a0a] border border-white/10 rounded-[40px] p-10 overflow-hidden transition-all duration-700 cursor-pointer hover:border-blue-500/30 hover:scale-[1.02] hover:shadow-[0_20px_50px_rgba(59,130,246,0.05)] flex flex-col h-full">
+  <div className="group relative bg-neutral-950 border border-white/10 rounded-[40px] p-10 overflow-hidden transition-all duration-700 cursor-pointer hover:border-blue-500/30 hover:scale-[1.02] hover:shadow-[0_20px_50px_rgba(59,130,246,0.05)] flex flex-col h-full">
     {/* Subtle Gradient Glow on Hover */}
     <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-blue-500/5 rounded-full blur-[100px] group-hover:bg-blue-500/10 transition-all duration-700" />
 

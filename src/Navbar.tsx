@@ -39,12 +39,12 @@ const Navbar: React.FC = () => {
       >
         <div className="mx-auto max-w-7xl">
           {/* Navbar Container - Pill Style */}
-          <div className="flex items-center justify-between rounded-full bg-[#081F5C]/70 backdrop-blur-md px-6 py-3 shadow-lg border border-white/10 transition-all duration-300">
+          <div className="flex items-center justify-between rounded-full bg-brand-navy/70 backdrop-blur-md px-6 py-3 shadow-lg border border-white/10 transition-all duration-300">
             
             {/* Left: Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="flex items-center gap-2 text-white hover:text-[#FFF9F0] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#334EAC] rounded-lg px-3 py-2"
+              className="flex items-center gap-2 text-white hover:text-brand-cream transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue rounded-lg px-3 py-2"
               aria-label="Toggle menu"
               aria-expanded={isMenuOpen}
             >
@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
             {/* Center: Logo & Wordmark */}
             <a 
               href="/" 
-              className="flex items-center gap-2 absolute left-1/2 transform -translate-x-1/2 hover:opacity-80 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#334EAC] rounded-lg px-3 py-2"
+              className="flex items-center gap-2 absolute left-1/2 transform -translate-x-1/2 hover:opacity-80 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue rounded-lg px-3 py-2"
             >
               <img src={Neko} alt="Neko Logo" className="h-8 w-auto" />
               <span className="text-lg font-bold text-white tracking-wide hidden sm:inline">Neko</span>
@@ -69,13 +69,13 @@ const Navbar: React.FC = () => {
             <div className="flex items-center gap-3 md:gap-4">
               <a
                 href="#"
-                className="hidden lg:inline text-white hover:text-[#FFF9F0] text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#334EAC] rounded-lg px-3 py-2"
+                className="hidden lg:inline text-white hover:text-brand-cream text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue rounded-lg px-3 py-2"
               >
                 Explore Assets
               </a>
               <a
                 href="https://dapp.nekoprotocol.xyz"
-                className="px-4 md:px-6 py-2 md:py-2.5 bg-white text-[#081F5C] rounded-full font-semibold text-xs md:text-sm hover:bg-[#FFF9F0] hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+                className="px-4 md:px-6 py-2 md:py-2.5 bg-white text-brand-navy rounded-full font-semibold text-xs md:text-sm hover:bg-brand-cream hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
               >
                 Launch App
               </a>

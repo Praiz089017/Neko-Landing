@@ -69,6 +69,32 @@ body {
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* ── Brand Palette ── */
+  --color-brand-navy: #081F5C;
+  --color-brand-blue: #334EAC;
+  --color-brand-light-blue: #BAD6EB;
+  --color-brand-cream: #FFF9F0;
+  --color-brand-orange: #FF9F3C;
+  --color-brand-orange-dark: #FF7A3C;
+
+  /* ── Neutral Grays ── */
+  --color-neutral-950: #0a0a0a;
+  --color-neutral-900: #141414;
+  --color-neutral-850: #1a1a1a;
+  --color-neutral-800: #1e1e1e;
+  --color-neutral-750: #2a2a2a;
+  --color-neutral-600: #2a3a50;
+  --color-neutral-500: #4a4a4a;
+  --color-neutral-450: #4a6a90;
+  --color-neutral-400: #7a7a7a;
+  --color-neutral-300: #8a8a8a;
+  --color-neutral-200: #aaa;
+  --color-neutral-150: #c0c0c0;
+  --color-neutral-100: #c8d8f0;
+
+  /* ── Decorative / Accent ── */
+  --color-icon-coinbase: #2775CA;
 }
 
 :root {
